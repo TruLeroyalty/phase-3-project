@@ -17,3 +17,7 @@ def main():
                 register_user(session)
             
             session.close()
+
+            if __name__ == "__main__":
+                Base.metadata.create_all(engine)
+                main()
