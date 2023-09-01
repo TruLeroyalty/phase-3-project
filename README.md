@@ -17,11 +17,11 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 INSTRUCTIONS:
-1. Go into the shell environment
-2. Run the cli.py 
-3. You will be prompted with registration or login. All you have to do is type r or l.
-4. If you register, fill out a Firstname and Lastname, Username, Password, and set the budget you wish to not go over. 
-5. You will then be successfully registered and your in the database with your information!
+    1. Go into the shell environment
+    2. Run the cli.py 
+    3. You will be prompted with registration or login. All you have to do is type r or l.
+    4. If you register, fill out a Firstname and Lastname, Username, Password, and set the budget you wish to not go over. 
+    5. You will then be successfully registered and your in the database with your information!
 
 Do you want to start listing that amount for your expenses? Go ahead and type in "y" or "n" for when it asks you to.
 You will then put in the amount that you deduct from your budget. Once you do, your budget in the database will then update!
