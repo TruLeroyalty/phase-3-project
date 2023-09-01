@@ -15,6 +15,7 @@
 8.Test the relationships (one to many)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+( Video of application if needed for visual instructions -- https://youtu.be/hWDoUqXVrQA )
 
 INSTRUCTIONS:
     1. Go into the shell environment
@@ -30,3 +31,4 @@ Are you finished listing your expenses? Go ahead and tell the prompt "n" and you
 Remember though, if you tend to forget your password, you will NOT be able to get back into your account, and will have to register again.
 
 Good luck on budgeting! 
+
