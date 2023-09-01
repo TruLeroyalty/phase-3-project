@@ -32,3 +32,7 @@ Remember though, if you tend to forget your password, you will NOT be able to ge
 
 Good luck on budgeting! 
 
+<div id="badges">
+  <a href="https://www.linkedin.com/in/leroysjr/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
