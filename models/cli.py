@@ -26,7 +26,7 @@ def login_user(session):
     click.echo("Login")
     name = click.prompt(yellow("First and Lastname"))
     username = click.prompt(yellow("Username"))
-    password = click.prompt("Password")
+    password = click.prompt(yellow("Password"))
 
     user = session.query(User).filter_by(username=username, password=password).first()
     return user
