@@ -10,6 +10,9 @@ def register_user(session):
     password = click.prompt("Password")
     budget = click.prompt("Budget", type=float)
 
+    user = User(name=f"{first_name} {last_name}", username=user_name,password=password, budget=budget)
+    session.add(user)
+    session.commit()
 
 
 def main():
