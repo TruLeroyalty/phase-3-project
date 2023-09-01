@@ -15,6 +15,8 @@ def register_user(session):
     session.commit()
     click.echo(green(f"User {first_name} {last_name} registered with a budget of ${budget:.2f}"))
 
+    calculate_expenses = click.confirm("Do you have any expenses to calculate?")
+    
 
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
