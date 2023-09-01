@@ -38,6 +38,10 @@ def manage_budget(session,user):
             click.echo(red("Invalid expense amount. Please enter a valid amount."))
             continue
 
+        user.budget -= expense_amount
+        session.commit()
+        
+
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
     session = Session()
