@@ -4,7 +4,9 @@
 
 # Budget CLI phase-3-project
 
-
+<div align="center">
+  <img src="https://img.freepik.com/free-photo/top-view-budget-written-note-notepad-with-pen-dark-surface-student-color-school-money-gray-college-copybook_179666-19729.jpg" width="600" height="300"/>
+</div>
 
 1.Create the virtual environment (Created virtual environment 3.8.13)
 2.Install dependencies 
