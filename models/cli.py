@@ -32,7 +32,11 @@ def login_user(session):
 def manage_budget(session,user):
     while True:
         click.echo(green(f"Your current budget is: {user.budget}"))
-        
+        expense_amount = float(input("Enter the expense amount: "))
+
+        if expense_amount <= 0 or expense_amount > user.budget:
+            click.echo(red("Invalid expense amount. Please enter a valid amount."))
+            continue
 
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
