@@ -9,6 +9,7 @@ alembic = "*"
 ipdb = "*"
 faker = "*"
 click = "*"
+prettycli = "*"
 
 [dev-packages]
 
