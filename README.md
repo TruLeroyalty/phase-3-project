@@ -1,5 +1,9 @@
 # phase-3-project
 
+<div align="center">
+
+
+
 1.Create the virtual environment (Created virtual environment 3.8.13)
 2.Install dependencies 
     a. SQLAlchemy Version 1.4.41 
@@ -31,6 +35,7 @@ Are you finished listing your expenses? Go ahead and tell the prompt "n" and you
 Remember though, if you tend to forget your password, you will NOT be able to get back into your account, and will have to register again.
 
 Good luck on budgeting! 
+</div>
 
 <div id="badges">
   <a href="https://www.linkedin.com/in/leroysjr/">
