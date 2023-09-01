@@ -10,3 +10,5 @@ class User(Base):
     username = Column(String)
     password = Column(String)
     budget = Column(Integer)
+
+engine = create_engine("sqlite:///expense_tracker.db")
