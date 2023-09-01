@@ -29,6 +29,9 @@ def login_user(session):
     user = session.query(User).filter_by(username=username, password=password).first()
     return user
 
+def manage_budget(session,user):
+    
+
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
     session = Session()
