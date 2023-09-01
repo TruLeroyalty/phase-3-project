@@ -2,7 +2,7 @@ from db import Session,User,Base,engine
 import click
 from prettycli import red,green,yellow
 
-def register_user(session,user):
+def register_user(session):
     click.echo("Register")
     first_name = click.prompt("First Name")
     last_name = click.prompt("Last Name")
@@ -64,7 +64,7 @@ def main():
         else:
             click.echo(red("Invalid username or password. Exiting..."))
     else:
-                register_user(session,user)
+        register_user(session)
             
     session.close()
 
