@@ -4,8 +4,11 @@ from prettycli import red,green,yellow
 
 def register_user(session):
     click.echo("Register")
-
-
+    first_name = click.prompt("First Name")
+    last_name = click.prompt("Last Name")
+    user_name= click.prompt("Username")
+    password = click.prompt("Password")
+    budget = click.prompt("Budget", type=float)
 
 
 
