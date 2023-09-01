@@ -42,6 +42,9 @@ def manage_budget(session,user):
         session.commit()
         click.echo(f"Expense of {red(str(expense_amount))} deducted from your budget.")
 
+        more_expenses = input(yellow("Do you want to enter another expense? (y/n): "))
+        
+
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
     session = Session()
