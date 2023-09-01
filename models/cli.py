@@ -24,7 +24,7 @@ def register_user(session):
 
 def login_user(session):
     click.echo("Login")
-    name = click.prompt("First and Lastname")
+    name = click.prompt(yellow("First and Lastname"))
     username = click.prompt("Username")
     password = click.prompt("Password")
 
