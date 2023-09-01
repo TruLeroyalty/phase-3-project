@@ -43,7 +43,10 @@ def manage_budget(session,user):
         click.echo(f"Expense of {red(str(expense_amount))} deducted from your budget.")
 
         more_expenses = input(yellow("Do you want to enter another expense? (y/n): "))
-        
+        if more_expenses.lower() !="y":
+            click.echo(green(f"Your remaining budget is: {user.budget}"))
+            click.echo(yellow("Thank you for using our services."))
+            break
 
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
