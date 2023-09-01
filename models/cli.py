@@ -16,7 +16,9 @@ def register_user(session):
     click.echo(green(f"User {first_name} {last_name} registered with a budget of ${budget:.2f}"))
 
     calculate_expenses = click.confirm("Do you have any expenses to calculate?")
-    
+    if calculate_expenses:
+        user = session.query(User).filter_by(name=f"{first_name} {last_name}").first()
+        manage_budget(session.user)
 
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
