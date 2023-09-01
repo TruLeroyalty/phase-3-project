@@ -18,7 +18,7 @@ def register_user(session):
     calculate_expenses = click.confirm("Do you have any expenses to calculate?")
     if calculate_expenses:
         user = session.query(User).filter_by(name=f"{first_name} {last_name}").first()
-        manage_budget(session.user)
+        manage_budget(session,user)
 
     if calculate_expenses != "y":
         click.echo(green(f"Your remaining budget is ${user.budget}"))
