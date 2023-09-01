@@ -57,7 +57,7 @@ def main():
     session = Session()
 
     choice = click.prompt(click.style("Do you want to (l)ogin or (r)egister?", fg="yellow"), type=click.Choice(["l", "r"]))
-        if choice == "1":
+        if choice == "l":
             user = login_user(session)
             if user:
                 manage_budget(session,user)
