@@ -64,7 +64,7 @@ def main():
         else:
             click.echo(red("Invalid username or password. Exiting..."))
     else:
-                register_user(session)
+                register_user(session,user)
             
     session.close()
 
