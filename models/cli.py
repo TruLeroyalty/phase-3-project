@@ -13,6 +13,7 @@ def register_user(session):
     user = User(name=f"{first_name} {last_name}", username=user_name,password=password, budget=budget)
     session.add(user)
     session.commit()
+    click.echo(green(f"User {first_name} {last_name} registered with a budget of ${budget:.2f}"))
 
 
 def main():
