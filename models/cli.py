@@ -20,6 +20,9 @@ def register_user(session):
         user = session.query(User).filter_by(name=f"{first_name} {last_name}").first()
         manage_budget(session.user)
 
+def login_user(session):
+    click.echo("Login")
+
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
     session = Session()
