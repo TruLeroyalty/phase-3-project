@@ -7,4 +7,13 @@ def main():
     session = Session()
 
     choice = click.prompt(click.style("Do you want to (l)ogin or (r)egister?", fg="yellow"), type=click.Choice(["l", "r"]))
-        
+        if choice == "1":
+            user = login_user(session)
+            if user:
+                manage_budget(session,user)
+            else:
+                click.echo(red("Invalid username or password. Exiting..."))
+            else:
+                register_user(session)
+            
+            session.close()
