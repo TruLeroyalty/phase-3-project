@@ -12,3 +12,5 @@ class User(Base):
     budget = Column(Integer)
 
 engine = create_engine("sqlite:///expense_tracker.db")
+Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine)
