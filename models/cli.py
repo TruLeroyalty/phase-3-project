@@ -30,7 +30,9 @@ def login_user(session):
     return user
 
 def manage_budget(session,user):
-    
+    while True:
+        click.echo(green(f"Your current budget is: {user.budget}"))
+        
 
 def main():
     click.echo(yellow("Seems like you need help keeping track of your budgeting!"))
