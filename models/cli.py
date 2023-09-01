@@ -20,6 +20,10 @@ def register_user(session):
         user = session.query(User).filter_by(name=f"{first_name} {last_name}").first()
         manage_budget(session.user)
 
+    if calculate_expenses != "y":
+        click.echo(green(f"Your remaining budget is ${user.budget}"))
+        click.echo(yellow("Thank you for using our services."))
+
 def login_user(session):
     click.echo("Login")
     name = click.prompt("First and Lastname")
