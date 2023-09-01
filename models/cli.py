@@ -2,7 +2,7 @@ from db import Session,User,Base,engine
 import click
 from prettycli import red,green,yellow
 
-def register_user(session):
+def register_user(session,user):
     click.echo("Register")
     first_name = click.prompt("First Name")
     last_name = click.prompt("Last Name")
