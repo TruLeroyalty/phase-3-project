@@ -1,4 +1,4 @@
-from db import Session,User,Base,Engine
+from db import Session,User,Base,engine
 import click
 from prettycli import red,green,yellow
 
